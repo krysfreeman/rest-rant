@@ -20,6 +20,13 @@ router.get('/', (req, res) => {
       res.render('places/index', { places })
 
   })
+  router.get('/new', (req, res) => {
+    res.render('places/new')
+  })
+  
+  router.get('/:arrayIndex', (req, res) => {
+    res.send(places[req.params.arrayIndex])
+  })
   
   
   
