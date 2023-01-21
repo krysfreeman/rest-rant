@@ -1,4 +1,5 @@
 require('dotenv').config()
+const mongoose = require("mongoose")
 const db = require("../models");
 
 db.Place.create([
